@@ -26,29 +26,43 @@
 
 ## 개발 환경 설정
 
-### 필요 도구
+### 설치 현황
 
-| 도구 | 용도 | 설치 |
+| 도구 | 버전 | 상태 |
 |------|------|------|
-| [Rojo](https://rojo.space) | 파일↔Roblox Studio 동기화 | `aftman install` |
-| [Wally](https://github.com/UpliftGames/wally) | 패키지 관리 (Knit 설치) | `aftman install` |
-| [Aftman](https://github.com/LPGhatguy/aftman) | 툴체인 관리 | GitHub 릴리즈 |
+| Aftman | 0.3.0 | ✅ 설치됨 |
+| Rojo | 7.4.4 | ✅ 설치됨 |
+| Wally | 0.3.2 | ✅ 설치됨 |
+| Knit | 1.5.1 | ✅ 설치됨 (`Packages/`) |
+| Rojo Studio 플러그인 | v7.6.1 | ✅ 설치됨 |
 
-### 초기 설정
+### 개발 시작 (매번)
 
 ```bash
-# 1. 패키지 설치 (Knit 등)
+cd E:/git/RobloxRPG
+
+# 1. Knit 패키지 복원 (처음 클론 시 또는 Packages/ 없을 때)
 wally install
 
-# 2. Rojo 서버 시작 (Roblox Studio 연동)
+# 2. Rojo 서버 시작
 rojo serve default.project.json
 ```
 
 ### Roblox Studio에서
 
-1. Rojo 플러그인 설치
-2. Studio에서 `Connect` → `localhost:34872`
-3. 파일 수정 시 Studio에 자동 반영
+1. Studio 실행
+2. 상단 **Plugins** 탭 → **Rojo** 클릭
+3. **Connect** 클릭 → `localhost:34872` 자동 연결
+4. 파일 수정 시 Studio에 실시간 반영
+
+> **주의**: 코드는 항상 에디터(VS Code 등)에서 수정할 것.
+> Studio에서 직접 수정하면 Rojo가 덮어씀.
+
+### 플러그인 설치 경로 (참고)
+
+```
+C:\Users\<사용자명>\AppData\Local\Roblox\Plugins\Rojo.rbxm
+```
 
 ---
 
