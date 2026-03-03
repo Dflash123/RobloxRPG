@@ -1,0 +1,23 @@
+# Roblox / Rojo
+*.rbxl
+*.rbxlx
+*.rbxm
+*.rbxmx
+*.lock
+
+# Rojo generated
+build/
+
+# Wally packages (설치 후 생성)
+Packages/
+ServerPackages/
+DevPackages/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
